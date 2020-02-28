@@ -164,6 +164,9 @@ mask+郵遞區號前三碼
             store_out += flag
             for i in range(flag):
                 del ret_table[0]
+        else:
+            retext = '輸入格式錯誤!\n查詢格式為:mask+郵遞區號前三碼\n例如查詢永康區輸入:mask710\n'
+
     elif text == '+':
         if(in_zipcode == -1):
             retext = '請先查詢地區!\n\n若要查詢可用指令請輸入--help\n'
